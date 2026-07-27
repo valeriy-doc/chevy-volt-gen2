@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Руководство энтузиаста по Chevrolet Volt второго поколения (2016–2019): характеристики, информация для владельцев и интерактивные калькуляторы здоровья батареи, стоимости на вторичке и цены на замену батареи." />
+  <title>Volt Gen 2 · Руководство по Chevrolet Volt (2016–2019)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+    <a class="brand" href="#top">
+      <span class="brand-bolt" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+      </span>
+      <span class="brand-text">VOLT<span class="brand-gen">·GEN 2</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Основная навигация">
+      <a href="#overview">Обзор</a>
+      <a href="#specs">Характеристики</a>
+      <a href="#battery-calc">Здоровье батареи</a>
+      <a href="#resale-calc">Стоимость</a>
+      <a href="#price-calc">Цены на батарею</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">2016 – 2019 · Voltec (EREV)</p>
+        <h1>Ездит на электронах, <span class="grad">но никогда</span><br />не оставит вас без хода.</h1>
+        <p class="lede">
+          Chevrolet Volt второго поколения сочетал 85 км электрического хода
+          с бензиновым генератором: каждый день вы ездили на электричестве, а в дальние
+          поездки отправлялись без страха остаться без заряда. Это любительский гид —
+          плюс три калькулятора для оценки здоровья батареи, стоимости на вторичном рынке
+          и реальной цены замены батареи.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#battery-calc">Оценить здоровье батареи</a>
+          <a class="btn btn-ghost" href="#overview">Узнать основы</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Электрозапас</dt><dd>85 <span>км</span></dd></div>
+          <div><dt>Общий запас хода</dt><dd>676 <span>км</span></dd></div>
+          <div><dt>Батарея</dt><dd>18.4 <span>кВт·ч</span></dd></div>
+          <div><dt>0–100 км/ч</dt><dd>8.0 <span>с</span></dd></div>
+        </dl>
+      </div>
+      <div class="hero-car">
+        <div class="car-glow" aria-hidden="true"></div>
+        <img class="car-photo" src="volt.jpg" width="1280" height="755"
+             alt="Chevrolet Volt второго поколения, вид спереди" loading="eager" />
+        <p class="car-credit">Фото: Kevauto, Wikimedia Commons — CC BY-SA 4.0</p>
+      </div>
+    </section>
+
+    <!-- ===================== OVERVIEW ===================== -->
+    <section id="overview" class="section">
+      <div class="section-head">
+        <h2>Чем особенный Volt второго поколения</h2>
+        <p>Электромобиль с увеличенным запасом хода (EREV): настоящий электрокар с бензиновым генератором в качестве резерва.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-ic">⚡</div>
+          <h3>Сначала электричество</h3>
+          <p>Электрический силовой агрегат мощностью 149 л.с. и 398 Нм везёт машину на батарее первые ~85 км. Большинство владельцев почти не тратят бензин на ежедневные поездки.</p>
+        </article>
+        <article class="card">
+          <div class="card-ic">⛽</div>
+          <h3>Без страха разрядки</h3>
+          <p>Когда батарея разряжается, двигатель 1.5 л работает как генератор (а иногда и приводит колёса), обеспечивая суммарный запас хода ~676 км. Заправляйтесь где угодно.</p>
+        </article>
+        <article class="card">
+          <div class="card-ic">🛡️</div>
+          <h3>Рассчитана на долгий срок</h3>
+          <p>Из батареи 18.4 кВт·ч реально используется лишь ~14 кВт·ч. Работа вдали от 0% и 100% — причина того, что батареи Volt стареют на удивление медленно.</p>
+        </article>
+        <article class="card">
+          <div class="card-ic">🔧</div>
+          <h3>Тихая и отточенная</h3>
+          <p>Второе поколение (2016+) получило более плавную систему Voltec с двумя моторами, облегчённую батарею, 5-е место и куда более тихий запуск ДВС, чем первое поколение.</p>
+        </article>
+      </div>
+
+      <div class="timeline">
+        <h3 class="timeline-title">Ключевые особенности по годам</h3>
+        <ol>
+          <li><span class="ty-year">2016</span><span class="ty-text">Дебют полностью нового второго поколения: 85 км электрохода, новый генератор 1.5 л, облегчённая батарея 18.4 кВт·ч.</span></li>
+          <li><span class="ty-year">2017</span><span class="ty-text">Расширение продаж на все 50 штатов; добавлены системы безопасности и режим для начинающих водителей.</span></li>
+          <li><span class="ty-year">2018</span><span class="ty-text">Перетасовка комплектаций; доступны адаптивный круиз-контроль и автоматическое торможение.</span></li>
+          <li><span class="ty-year">2019</span><span class="ty-text">Опциональное зарядное устройство 7.2 кВт сокращает зарядку от Level 2 до ~2.3 ч; новая химия ячеек. Последний год выпуска.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== SPECS ===================== -->
+    <section id="specs" class="section">
+      <div class="section-head">
+        <h2>Характеристики</h2>
+        <p>Цифры Volt 2016–2019 (комплектации LT / Premier).</p>
+      </div>
+      <div class="spec-grid">
+        <div class="spec-block">
+          <h4>Силовая установка</h4>
+          <table class="spec-table">
+            <tr><th>Система</th><td>Voltec, два мотора (EREV)</td></tr>
+            <tr><th>Электр. мощность</th><td>149 л.с. (111 кВт)</td></tr>
+            <tr><th>Электр. момент</th><td>398 Нм (294 lb-ft)</td></tr>
+            <tr><th>ДВС</th><td>1.5 л, I4 (101 л.с.)</td></tr>
+            <tr><th>Разгон 0–100 км/ч</th><td>~8.0 с</td></tr>
+            <tr><th>Макс. скорость</th><td>158 км/ч</td></tr>
+          </table>
+        </div>
+        <div class="spec-block">
+          <h4>Батарея и запас хода</h4>
+          <table class="spec-table">
+            <tr><th>Батарея</th><td>18.4 кВт·ч Li-ion (~14 полезных)</td></tr>
+            <tr><th>Ячейки</th><td>192, жидкостное охлаждение</td></tr>
+            <tr><th>Электрозапас</th><td>85 км (EPA)</td></tr>
+            <tr><th>Общий запас</th><td>~676 км</td></tr>
+            <tr><th>Эффективность</th><td>~5.6 л/100 км (106 MPGe)</td></tr>
+            <tr><th>Гарантия</th><td>8 лет / 160 000 км (батарея)</td></tr>
+          </table>
+        </div>
+        <div class="spec-block">
+          <h4>Зарядка</h4>
+          <table class="spec-table">
+            <tr><th>Level 1 (120 В)</th><td>~13 ч</td></tr>
+            <tr><th>Level 2 (240 В, 3.6 кВт)</th><td>~4.5 ч</td></tr>
+            <tr><th>Level 2 (2019, 7.2 кВт)</th><td>~2.3 ч</td></tr>
+            <tr><th>Быстрая зарядка DC</th><td>Не поддерживается</td></tr>
+            <tr><th>Разъём</th><td>SAE J1772</td></tr>
+          </table>
+        </div>
+        <div class="spec-block">
+          <h4>Кузов и габариты</h4>
+          <table class="spec-table">
+            <tr><th>Кузов</th><td>5-дверный хэтчбек, 5 мест</td></tr>
+            <tr><th>Снаряжённая масса</th><td>~1607 кг</td></tr>
+            <tr><th>Багажник</th><td>300 л (10.6 куб. фт)</td></tr>
+            <tr><th>Длина</th><td>4582 мм (180.4 дюйма)</td></tr>
+            <tr><th>Коэф. сопротивления</th><td>0.28 Cd</td></tr>
+            <tr><th>Топливный бак</th><td>33.7 л (8.9 галлона)</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BATTERY HEALTH CALC ===================== -->
+    <section id="battery-calc" class="section calc-section">
+      <div class="section-head">
+        <h2>Оценка здоровья батареи</h2>
+        <p>Оцените остаточную полезную ёмкость батареи вашего Volt по возрасту, пробегу и характеру эксплуатации. Это модель, а не диагностика — для точного значения нужен дилерский тест.</p>
+      </div>
+
+      <div class="calc">
+        <form class="calc-inputs" id="battForm">
+          <div class="field">
+            <label for="b-year">Год выпуска</label>
+            <select id="b-year">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018" selected>2018</option>
+              <option value="2019">2019</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="b-miles">Пробег <span class="unit-tag" id="b-miles-unit">км</span></label>
+            <input type="number" id="b-miles" min="0" max="640000" step="5000" value="100000" />
+            <input type="range" id="b-miles-range" min="0" max="400000" step="5000" value="100000" />
+          </div>
+
+          <div class="field">
+            <label for="b-climate">Климат</label>
+            <select id="b-climate">
+              <option value="cool">Прохладный / мягкий (северо-запад, северо-восток)</option>
+              <option value="moderate" selected>Умеренный (большая часть США)</option>
+              <option value="hot">Жаркий (Аризона, Техас, Флорида, пустыни)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="b-charging">Обычная зарядка</label>
+            <select id="b-charging">
+              <option value="l1">В основном Level 1 (120 В), щадящая</option>
+              <option value="l2" selected>В основном Level 2 (240 В)</option>
+              <option value="mixed">Смешанная / частые подзарядки</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="b-usage">Характер поездок</label>
+            <select id="b-usage">
+              <option value="ev">Почти всегда на электричестве (заряжаю ежедневно)</option>
+              <option value="balanced" selected>Баланс электро + бензин</option>
+              <option value="gas">В основном бензин / редко заряжаю</option>
+            </select>
+          </div>
+
+          <div class="field field-check">
+            <label class="switch">
+              <input type="checkbox" id="b-garage" checked />
+              <span class="slider"></span>
+            </label>
+            <span>Обычно паркуется в гараже / в тени</span>
+          </div>
+        </form>
+
+        <aside class="calc-output" id="battOut">
+          <div class="gauge-wrap">
+            <svg viewBox="0 0 200 120" class="gauge">
+              <path class="gauge-track" d="M20 110 A80 80 0 0 1 180 110" />
+              <path class="gauge-fill" id="battArc" d="M20 110 A80 80 0 0 1 180 110" />
+            </svg>
+            <div class="gauge-center">
+              <span class="gauge-num" id="battPct">—</span>
+              <span class="gauge-lbl">состояние (SoH)</span>
+            </div>
+          </div>
+          <div class="out-rows">
+            <div class="out-row"><span>Полезная ёмкость (оценка)</span><strong id="battKwh">—</strong></div>
+            <div class="out-row"><span>Текущий электрозапас (оценка)</span><strong id="battRange">—</strong></div>
+            <div class="out-row"><span>Потеря ёмкости</span><strong id="battLost">—</strong></div>
+          </div>
+          <p class="out-note" id="battNote">Измените параметры, чтобы увидеть оценку.</p>
+          <span class="badge" id="battBadge">—</span>
+        </aside>
+      </div>
+      <p class="disclaimer">Модель основана на опубликованных данных о деградации Volt/Bolt (календарный + циклический износ с поправками на климат и стиль эксплуатации). Отдельные батареи отличаются; для точного значения используйте дилера GM или OBD-скан (например, Torque Pro).</p>
+    </section>
+
+    <!-- ===================== RESALE CALC ===================== -->
+    <section id="resale-calc" class="section calc-section">
+      <div class="section-head">
+        <h2>Оценка стоимости на вторичном рынке</h2>
+        <p>Примерная частная цена продажи по году, пробегу, состоянию и здоровью батареи. Volt быстро дешевеет в начале, затем стабилизируется — хорошая новость для покупателей б/у.</p>
+      </div>
+
+      <div class="calc">
+        <form class="calc-inputs" id="resForm">
+          <div class="field">
+            <label for="r-year">Год выпуска</label>
+            <select id="r-year">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018" selected>2018</option>
+              <option value="2019">2019</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-trim">Комплектация</label>
+            <select id="r-trim">
+              <option value="lt" selected>LT (базовая)</option>
+              <option value="premier">Premier</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-miles">Пробег <span class="unit-tag">км</span></label>
+            <input type="number" id="r-miles" min="0" max="640000" step="5000" value="100000" />
+            <input type="range" id="r-miles-range" min="0" max="400000" step="5000" value="100000" />
+          </div>
+          <div class="field">
+            <label for="r-cond">Состояние</label>
+            <select id="r-cond">
+              <option value="rough">Плохое</option>
+              <option value="fair">Удовлетворительное</option>
+              <option value="good" selected>Хорошее</option>
+              <option value="clean">Отличное</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-health">Здоровье батареи (SoH) <span class="unit-tag"><span id="r-health-val">90</span>%</span></label>
+            <input type="range" id="r-health" min="60" max="100" step="1" value="90" />
+          </div>
+          <div class="field field-check">
+            <label class="switch">
+              <input type="checkbox" id="r-onestars" />
+              <span class="slider"></span>
+            </label>
+            <span>Один владелец, чистый титул, история обслуживания</span>
+          </div>
+        </form>
+
+        <aside class="calc-output">
+          <div class="price-hero">
+            <span class="price-lbl">Оценочная частная цена</span>
+            <span class="price-num" id="resPrice">—</span>
+            <span class="price-range" id="resRange">—</span>
+          </div>
+          <div class="bar-compare">
+            <div class="bar-row">
+              <span>Цена новым (MSRP)</span>
+              <div class="bar"><div class="bar-fill bar-msrp" id="barMsrp"></div></div>
+              <strong id="resMsrp">—</strong>
+            </div>
+            <div class="bar-row">
+              <span>Оценка сегодня</span>
+              <div class="bar"><div class="bar-fill bar-now" id="barNow"></div></div>
+              <strong id="resNow">—</strong>
+            </div>
+          </div>
+          <div class="out-rows">
+            <div class="out-row"><span>Общая амортизация</span><strong id="resDep">—</strong></div>
+            <div class="out-row"><span>Остаточная стоимость</span><strong id="resRetain">—</strong></div>
+          </div>
+          <p class="out-note" id="resNote"></p>
+        </aside>
+      </div>
+      <p class="disclaimer">Только ориентир — реальные цены зависят от локального спроса, правил налоговых льгот на EV и сезона. Сверяйтесь с KBB, Edmunds и свежими локальными объявлениями перед покупкой или продажей.</p>
+    </section>
+
+    <!-- ===================== BATTERY PRICE CALC ===================== -->
+    <section id="price-calc" class="section calc-section">
+      <div class="section-head">
+        <h2>Справочник по ценам на замену батареи</h2>
+        <p>Сколько стоит починить или заменить высоковольтную батарею — то, чего больше всего боятся будущие владельцы (обычно напрасно).</p>
+      </div>
+
+      <div class="calc">
+        <form class="calc-inputs" id="priceForm">
+          <div class="field">
+            <label>Вариант замены</label>
+            <div class="seg" id="p-route" role="tablist">
+              <button type="button" class="seg-btn active" data-route="new">Новый блок</button>
+              <button type="button" class="seg-btn" data-route="reman">Восстановленный</button>
+              <button type="button" class="seg-btn" data-route="used">Б/у / разбор</button>
+              <button type="button" class="seg-btn" data-route="module">Один модуль</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="p-labor">Ставка работ <span class="unit-tag">$/ч</span></label>
+            <input type="number" id="p-labor" min="80" max="300" step="5" value="150" />
+            <input type="range" id="p-labor-range" min="80" max="300" step="5" value="150" />
+          </div>
+          <div class="field field-check">
+            <label class="switch">
+              <input type="checkbox" id="p-dealer" checked />
+              <span class="slider"></span>
+            </label>
+            <span>Установка у дилера (а не у независимого спеца по EV)</span>
+          </div>
+          <div class="field field-check">
+            <label class="switch">
+              <input type="checkbox" id="p-warranty" />
+              <span class="slider"></span>
+            </label>
+            <span>Ещё на гарантии 8 лет / 160 000 км</span>
+          </div>
+        </form>
+
+        <aside class="calc-output">
+          <div class="price-hero">
+            <span class="price-lbl" id="pRouteLbl">Новый блок — с установкой</span>
+            <span class="price-num" id="priceNum">—</span>
+            <span class="price-range" id="priceRange">—</span>
+          </div>
+          <div class="out-rows">
+            <div class="out-row"><span>Деталь / блок</span><strong id="pPart">—</strong></div>
+            <div class="out-row"><span>Работа (<span id="pHours">—</span> ч)</span><strong id="pLabor">—</strong></div>
+            <div class="out-row"><span>Расходники и охлаждающая жидкость</span><strong id="pMisc">—</strong></div>
+          </div>
+          <p class="out-note" id="priceNote"></p>
+          <span class="badge" id="priceBadge">—</span>
+        </aside>
+      </div>
+      <p class="disclaimer">Цены отражают типичные диапазоны рынка США по данным владельцев и мастерских; полные блоки GM редки, поэтому восстановленные блоки и ремонт на уровне модулей — обычное реальное решение. Всегда берите письменную смету.</p>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="section">
+      <div class="section-head">
+        <h2>Частые вопросы</h2>
+        <p>Вопросы, которые задаёт каждый будущий владелец Volt.</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Батареи Volt действительно выходят из строя?</summary>
+          <p>Редко. Благодаря агрессивной буферизации (используется лишь ~14 из 18.4 кВт·ч) и жидкостному охлаждению батареи второго поколения обычно сохраняют 85–95% полезной ёмкости и после 160 000 км. Полный отказ блока — редкость, и обычно он покрывается гарантией 8 лет / 160 000 км.</p>
+        </details>
+        <details>
+          <summary>Можно ли ездить, вообще не заряжая?</summary>
+          <p>Да. Двигатель 1.5 л будет работать как генератор, и машина поедет как гибрид с расходом ~5.6 л/100 км. Но именно зарядка даёт экономию — без неё вы упускаете самые дешёвые километры.</p>
+        </details>
+        <details>
+          <summary>Почему модель сняли с производства?</summary>
+          <p>GM прекратил выпуск Volt в начале 2019 года, чтобы переориентировать заводские мощности на кроссоверы и чистые электромобили вроде Bolt. Это не было проблемой надёжности — Volt остаётся одним из самых уважаемых подключаемых гибридов в истории.</p>
+        </details>
+        <details>
+          <summary>Подпадает ли под налоговые льготы для EV?</summary>
+          <p>Как подержанный автомобиль он может подпадать под федеральный вычет за чистые б/у авто (до $4000), если цена и ваш доход укладываются в лимиты, плюс некоторые льготы штатов. Правила часто меняются — проверьте актуальные условия перед покупкой.</p>
+        </details>
+        <details>
+          <summary>Что обычно требует внимания на б/у экземпляре?</summary>
+          <p>В целом всё спокойно: 12-вольтовый аккумулятор, шины, тормоза (служат долго благодаря рекуперации) и обслуживание охлаждающих контуров батареи и электроники. При покупке обязательно проверьте здоровье высоковольтной батареи сканом.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="foot-brand"><span class="brand-bolt small"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span> VOLT · GEN 2</p>
+      <p class="foot-note">Независимый любительский проект. Не связан с General Motors или Chevrolet. Все цифры — оценки в образовательных целях, проверяйте их перед принятием решений о покупке.</p>
+      <p class="foot-copy">© <span id="year"></span> · Сделано для фанатов Volt. Фото автомобиля: Kevauto (Wikimedia Commons), CC BY-SA 4.0.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
