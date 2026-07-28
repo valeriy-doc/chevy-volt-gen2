@@ -15,8 +15,58 @@ const CHAT_API_URL = "https://volt-chat-proxy.vstepanovdev.workers.dev";
 
 const NOT_CONFIGURED = CHAT_API_URL.includes("YOUR-SUBDOMAIN");
 
+// Library of starter questions — a few are shown at random on an empty chat.
+const PRESET_QUESTIONS = [
+  "Насколько надёжна батарея после 150 000 км?",
+  "Стоит ли брать Volt, если негде заряжать дома?",
+  "Сколько стоит замена батареи?",
+  "Как холод влияет на запас хода зимой?",
+  "Почему Volt сняли с производства?",
+  "Какой расход бензина, если не заряжать?",
+  "На что смотреть при покупке б/у Volt?",
+  "Можно ли зарядить Volt на быстрой станции (DC)?",
+  "Чем второе поколение лучше первого?",
+  "Подходит ли Volt для дальних поездок?",
+  "Как часто выходит из строя 12-вольтовый аккумулятор?",
+  "2018 Volt или подержанный Chevrolet Bolt — что выбрать?",
+];
+const SUGGEST_COUNT = 3;
+
 const history = []; // {role, content} pairs sent to the proxy
 let busy = false;
+
+function shuffled(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function renderSuggestions() {
+  clearSuggestions();
+  const wrap = document.createElement("div");
+  wrap.className = "chat-suggest";
+  wrap.id = "chatSuggest";
+  for (const q of shuffled(PRESET_QUESTIONS).slice(0, SUGGEST_COUNT)) {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "chat-chip";
+    chip.textContent = q;
+    chip.addEventListener("click", () => {
+      el("chatInput").value = q;
+      send();
+    });
+    wrap.appendChild(chip);
+  }
+  el("chatLog").appendChild(wrap);
+}
+
+function clearSuggestions() {
+  const s = el("chatSuggest");
+  if (s) s.remove();
+}
 
 function el(id) {
   return document.getElementById(id);
@@ -54,6 +104,7 @@ async function send() {
   }
 
   input.value = "";
+  clearSuggestions();
   addBubble("user", text);
   history.push({ role: "user", content: text });
 
@@ -132,7 +183,10 @@ async function send() {
 function toggleChat(open) {
   const panel = el("chatPanel");
   panel.hidden = !open;
-  if (open) el("chatInput").focus();
+  if (open) {
+    if (history.length === 0) renderSuggestions(); // fresh picks each open
+    el("chatInput").focus();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

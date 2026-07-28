@@ -14,7 +14,7 @@
      - optional rate limit (enable the CHAT_LIMITER binding — see README)
    ======================================================================= */
 
-const MODEL = "claude-opus-4-8"; // swap to "claude-haiku-4-5" for a cheaper public widget
+const MODEL = "claude-sonnet-4-6"; // "claude-haiku-4-5" = cheaper, "claude-opus-4-8" = top quality
 const MAX_TOKENS = 1024;         // caps the length (and cost) of each reply
 const MAX_MESSAGES = 20;         // caps conversation history sent upstream
 const MAX_CHARS_PER_MSG = 2000;  // caps each individual message
