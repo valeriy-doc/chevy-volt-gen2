@@ -5,15 +5,12 @@ compatibility_date = "2026-01-01"
 [vars]
 # Comma-separated list of sites allowed to call this proxy.
 # Add "http://localhost:8000" here while testing locally.
-ALLOWED_ORIGINS = "https://valeriy-doc.github.io,https://vstepanovdev.github.io"
+ALLOWED_ORIGINS = "https://valeriy-doc.github.io"
 
-# --- Optional: IP rate limiting -------------------------------------------
-# Uncomment to cap each visitor to 15 requests/minute. The worker.js code
-# already uses this binding if present. (Cloudflare's native rate-limiting
-# binding — no KV or extra service needed.)
-#
-# [[unsafe.bindings]]
-# name = "CHAT_LIMITER"
-# type = "ratelimit"
-# namespace_id = "1001"          # any unique number for your account
-# simple = { limit = 15, period = 60 }
+# --- IP rate limiting --------------------------------------------------------
+# NOTE: Cloudflare's native rate-limit binding ([[ratelimits]]) was tried here
+# but "failed open" on this account (never returned success:false), so it is
+# left out rather than provide false protection. The worker.js code still honors
+# a `CHAT_LIMITER` binding if one is added later. For reliable per-IP limiting,
+# a Durable Object counter is the robust route. The real hard cost ceiling is a
+# monthly spend limit set in the Anthropic console.
