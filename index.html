@@ -416,6 +416,32 @@
     </div>
   </footer>
 
+  <!-- ===================== AI CHAT WIDGET ===================== -->
+  <button class="chat-launcher" id="chatLauncher" aria-label="Спросить ассистента о Volt">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+    <span>Спросить о Volt</span>
+  </button>
+
+  <section class="chat-panel" id="chatPanel" hidden aria-label="Чат-ассистент">
+    <header class="chat-head">
+      <span class="chat-title">
+        <span class="chat-dot" aria-hidden="true"></span> Ассистент по Volt
+      </span>
+      <button class="chat-close" id="chatClose" aria-label="Закрыть чат">×</button>
+    </header>
+    <div class="chat-log" id="chatLog">
+      <div class="chat-msg chat-assistant">Привет! Спросите меня о Chevrolet Volt 2-го поколения — запас хода, батарея, зарядка, покупка на вторичке.</div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" class="chat-input" placeholder="Задайте вопрос об автомобиле…" autocomplete="off" />
+      <button class="chat-send" id="chatSend" aria-label="Отправить">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 20v-6l8-2-8-2V4l19 8z"/></svg>
+      </button>
+    </div>
+    <p class="chat-foot">Ответы генерирует ИИ и могут содержать неточности.</p>
+  </section>
+
   <script src="script.js"></script>
+  <script src="chat.js"></script>
 </body>
 </html>
